@@ -1,36 +1,56 @@
-<form  action="thanks.php"  method="post">
-        <div>
-        <label  for="name">Nom :</label>
-        <input  type="text"  id="name"  name="user_name">
-        </div>
-        <div>
-        <label  for="firstname">Prénom :</label>
-        <input  type="text"  id="firstname"  name="user_firstname">
-        </div>
-        <div>
-        <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email">
-        </div>
-        <div>
-        <label  for="phoneNumber">Téléphone :</label>
-        <input  type="text"  id="phoneNumber"  name="user_phone">
-        </div>
-        <div>
-        <label  for="about">Sujet :</label>
-        <select id="about" name="user_about">
-        <option >Choose:</option>    
-        <option >Item_1</option>
-        <option >Item_2</option>
-        <option >Item_3</option>
-        <option >Item_4</option>
-        
-        </select>
-        </div>
-        <div>
-        <label  for="message">Message :</label>
-        <textarea  id="message"  name="user_message"></textarea>
-        </div>
-        <div  class="button">
-        <button  type="submit">Envoyer votre message</button>
-        </div>
 
+
+
+
+
+
+<!-- Formulaires -->
+<form class="border rounded p-3 m-5 bg-light" action="thanks.php"  method="POST">
+
+        <p><span class="error">* required field</span></p>
+                <div>
+                <label  for="name" class="form-label" required>Nom :</label>
+                <input  type="text"  id="name"  name="lastname">
+                <span class="error">* </span>
+                </div>
+                <div>
+
+                <label  for="firstname" class="form-label" required>Prénom :</label>
+                <input  type="text"  id="firstname"  name="firstname">
+                <span class="error">* </span>
+                </div>
+
+                <div>
+                <label  for="courriel" class="form-label" required >Courriel :</label>
+                <input  type="email"  id="courriel"  name="email">
+                <span class="error">* </span>
+                </div>
+
+                <div>
+                <label  for="phoneNumber" class="form-label" required>Téléphone :</label>
+                <input  type="text"  id="phoneNumber"  name="phone">
+                <span class="error">* </span>
+                </div>
+
+                <div>
+                <label  for="about" required>Sujet :</label>
+                <span class="error">* </span>
+                <select id="about" name="about">
+                <option ></option>
+                <option >PHP</option>
+                <option >Javascript</option>
+                <option >Python</option>
+                <option >Java</option>
+        
+                </select>
+                </div>
+                <div>
+                <label  for="message" required>Message :</label>
+                <span class="error">* </span>
+                <textarea  id="message"  name="message"></textarea>
+                </div>
+
+                <div  class="button" class="text-center">
+                <button  type="submit">Envoyer votre message</button>
+                </div>
+</form>

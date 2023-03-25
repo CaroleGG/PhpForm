@@ -17,6 +17,11 @@
 
 <body>
     
+<main class="container">
+        <h1 class="border rounded text-center p-3 m-5 bg-light">Page de contact</h1>
+
+       
+
         <?php include "form.php" ;?>
    
 
