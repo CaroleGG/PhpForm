@@ -60,12 +60,12 @@
                 </div>
         <?php } else { ?>
             <div>
-            Merci <?php echo(  $firstname.' '.$lastname .' ') ; ?>de nous avoir contacté à propos de <?php $about ;?>.
+            Merci <?php echo(  $firstname.' '.$lastname .' ') ; ?>de nous avoir contacté à propos de <?php echo $about ;?>.
             <br />
 
-            Un de nos conseillers vous contactera soit à l\n’adresse <?php $email ;?> ou par téléphone au <?php $phone ; ?> dans les plus brefs délais pour traiter votre demande : 
+            Un de nos conseillers vous contactera soit à l\n’adresse <?php echo $email ;?> ou par téléphone au <?php echo $phone ; ?> dans les plus brefs délais pour traiter votre demande : 
 
-            <?php $message ;?>
+            <?php echo $message ;?>
             </div>
         <?php }; ?>    
 
